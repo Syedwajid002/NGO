@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> required
+        .form{
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            
+            width: 40vh;
+            border: 1px solid black;
+        }
+        .labels{
+            margin: 10px ;
+        }
+        input{
+            margin: 4px;
+        }
+        label{
+            margin-left: 4px;
+        }
+        button{
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="form">
+        <h2>Contact Us</h2>
+            <div class="labels">
+            <label for="name">Enter your Name</label>
+            <br>
+            <input id="name1" type="text" required>
+            <br>
+            <label for="Phone-Number">Enter your Phone Number</label>
+            <br>
+            <input type="text" required>
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="" id="" required>
+            <br>
+            <button onclick="contact()">Contact</button>
+        </div>
+        </div>
+        <p>Share Your details so that we can contact you </p>
+    </form>
+</body>
+<script>
+    var name=document.getElementById('name1');
+    function contact(name){
+        if(name.length!=0){
+            alert(name.value+" You will be Contacted Shortyly")
+        }
+        else{
+        alert("please Fill the form")
+        }
+    }
+</script>
+</html>

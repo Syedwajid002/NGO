@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            width: 40vh;
+            border: 1px solid black;
+        }
+        .labels{
+            margin: 10px ;
+        }
+        input{
+            margin: 4px;
+        }
+        label{
+            margin-left: 4px;
+        }
+        button{
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Support Us Supporting Others</h2>
+        <div class="form">
+            <div class="labels">
+            <label for="name">Enter your Name</label>
+            <br>
+            <input id="name1" type="text" required>
+            <br>
+            <label for="Phone-Number">Enter your Phone Number</label>
+            <br>
+            <input type="text" required>
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="" id="" required>
+            <button onclick="contact(name)">Next</button>
+        </div>
+        </div>
+        <p>Share Your details so that we can contact you </p>
+    </form>
+</body>
+<script>
+    var name=document.getElementById('name1');
+    function contact(){
+        if(name.length>0){
+            alert(name+" You will be Contacted Shortyly");
+        }
+
+    }
+</script>
+</html>
